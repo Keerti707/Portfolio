@@ -348,3 +348,106 @@ nav {
         opacity: 0.4;
     }
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+
+    .main-container {
+        gap: 50px;
+        padding: 60px 8%;
+    }
+
+    .image img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Stack layout vertically */
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    /* Profile picture smaller */
+    .image img {
+        width: 260px;
+        height: 260px;
+    }
+
+    /* Headings scale */
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .typewriter {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 0.95rem;
+    }
+
+    /* Social icons centered */
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Nav spacing */
+    .home-nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .links {
+        gap: 20px;
+    }
+
+    /* Blog spacing */
+    .content {
+        padding: 0 15px;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+        margin-top: 50px;
+    }
+
+    .content p {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .content h1 {
+        font-size: 1.6rem;
+    }
+
+    .typewriter {
+        font-size: 1rem;
+    }
+
+    .download-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
