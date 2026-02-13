@@ -7,7 +7,7 @@ It reflects my journey from competitive programming to web development and open 
 
 🚀 Live Website
 
-https://Keerti707.github.io/Portfolio/
+https://keerti707.github.io/Portfolio/
 
 
 🛠 Tech Stack
