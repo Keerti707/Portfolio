@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About - Keerti Gupta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Keerti Gupta</span>
+            </div>
+
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="blogs.html">Blogs</a></div>
+            </div>
+
+            <i class="fa-solid fa-bars hamburg" onclick="openMenu()"></i>
+        </div>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blogs.html">Blogs</a>
+                <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section>
+        <div class="main-container">
+            <div class="content">
+
+                <h1>About Me</h1>
+
+                <p>
+                    I began my journey with competitive programming and gradually
+                    transitioned into web development and open source.
+                    I enjoy building real world applications and continuously learning.
+                </p>
+
+                <br><br>
+
+                <h1>Projects</h1>
+                <br>
+
+                <h3>Open Source Contributions</h3><br>
+                    <p>I have contributed to open source projects including Servo and Zulip, where I worked on small but
+                    meaningful fixes related to build warnings and test stability. Through these contributions I gained
+                    experience with large Rust codebases, CI workflows, code reviews, and good Git practices.
+                    This was my first time contributing to a massive open source project,and it helped me
+                    understand real world collaboration and engineering standards. I am continuing to explore open
+                    source
+                    and improve with each contribution.</p>
+
+                <br>
+
+                <h3>OOTD-Generator</h3><br>
+                    <p>OOTD is a client side outfit recommendation web application built using HTML CSS and vanilla
+                    JavaScript. It allows users to upload clothing images across three categories and generates two
+                    outfit combinations dynamically using structured JavaScript logic. The project uses DOM manipulation
+                    array based wardrobe management and localStorage for state persistence across multiple pages. The
+                    layout is built using CSS Grid for overall structure and Flexbox for component alignment with
+                    responsive design and dark mode support. The focus was to combine clean frontend architecture with
+                    interactive UI and structured recommendation logic.</p>
+                <br>
+               <h3>Tic Tac Toe Game</h3><br>
+                     <p>I built a Tic Tac Toe web application using HTML, CSS, and JavaScript as one of my first frontend
+                    projects. Through this project, I learned event handling, basic game logic
+                    implementation, and state management in vanilla JavaScript. It helped me understand how user
+                    interactions translate into dynamic UI updates in a browser environment.</p>
+
+                <br>
+
+                <h3>Currency Converter</h3><br>
+                    <p>I developed a simple currency converter using HTML, CSS, and JavaScript to strengthen my
+                    understanding of JavaScript fundamentals and API integration. This project helped me practice
+                    working with asynchronous requests, handling user input, and updating the UI dynamically based on
+                    real-time data. It marked an important step in my transition from learning syntax to building
+                    functional web applications.</p>
+
+                <br>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #ffe6f0, #ffc2d1);
+}
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    width: 100%;
+    padding: 20px 10%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ff4d88;
+    align-self: center;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.link a:hover {
+    color: #ff4d88;
+}
+
+.hamburg,
+.cancel {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ================= HERO SECTION ================= */
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 10%;
+    min-height: 90vh;
+}
+
+.main-container .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container .image img {
+    width: 900px;
+    height: 900px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ff4d88;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.main-container .content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.content h1 span {
+    color: #ff4d88;
+}
+
+.typewriter {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* ================= SOCIAL LINKS ================= */
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    margin-right: 15px;
+}
+
+.social-links i {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #ff4d88;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff4d88;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.social-links i:hover {
+    background-color: #ff4d88;
+    color: black;
+}
+
+/* ================= DOWNLOAD BUTTON ================= */
+
+.btn {
+    margin-top: 50px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: black;
+    color: #ff4d88;
+    border: 2px solid #ff4d88;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #ff4d88;
+    color: black;
+}
+
+/* ================= BLOG PAGE IMPROVEMENTS ================= */
+
+.content h2 {
+    margin-top: 70px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: fantasy;
+}
+
+.content p {
+    margin-bottom: 22px;
+    text-align: justify;
+    font-style: oblique
+}
+
+/* ================= DROPDOWN ================= */
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-500px);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease;
+    padding: 40px 0;
+}
+
+.dropdown .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.dropdown a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.dropdown a:hover {
+    color: #ff4d88;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .links {
+        display: none;
+    }
+
+    .hamburg {
+        display: block;
+    }
+
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .main-container .image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+}
+
+.main-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= BUBBLE EXPLOSION ================= */
+
+.bubble-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.bubble-container span {
+    position: absolute;
+    bottom: -150px;
+    background: rgba(159, 10, 60, 0.25);
+    border-radius: 50%;
+    animation: rise 15s infinite ease-in;
+}
+
+/* Random sizes & positions */
+.bubble-container span:nth-child(1) {
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 12s;
+}
+
+.bubble-container span:nth-child(2) {
+    left: 15%;
+    width: 35px;
+    height: 35px;
+    animation-duration: 18s;
+}
+
+.bubble-container span:nth-child(3) {
+    left: 25%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 14s;
+}
+
+.bubble-container span:nth-child(4) {
+    left: 35%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 20s;
+}
+
+.bubble-container span:nth-child(5) {
+    left: 45%;
+    width: 18px;
+    height: 18px;
+    animation-duration: 11s;
+}
+
+.bubble-container span:nth-child(6) {
+    left: 55%;
+    width: 30px;
+    height: 30px;
+    animation-duration: 16s;
+}
+
+.bubble-container span:nth-child(7) {
+    left: 65%;
+    width: 22px;
+    height: 22px;
+    animation-duration: 13s;
+}
+
+.bubble-container span:nth-child(8) {
+    left: 75%;
+    width: 38px;
+    height: 38px;
+    animation-duration: 19s;
+}
+
+.bubble-container span:nth-child(9) {
+    left: 85%;
+    width: 26px;
+    height: 26px;
+    animation-duration: 15s;
+}
+
+.bubble-container span:nth-child(10) {
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    animation-duration: 15s;
+}
+
+/* Remaining bubbles randomised slightly */
+.bubble-container span:nth-child(n+11) {
+    left: calc(100% * var(--random));
+    width: 25px;
+    height: 25px;
+    animation-duration: 5s;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-120vh) scale(1.2);
+        opacity: 0.4;
+    }
+}

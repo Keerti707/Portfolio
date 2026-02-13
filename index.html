@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keerti Gupta Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+
+            <div class="logo">
+                <span>Keerti Gupta</span>
+            </div>
+
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="blogs.html">Blogs</a></div>
+            </div>
+
+            <i class="fa-solid fa-bars hamburg" onclick="openMenu()"></i>
+        </div>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blogs.html">Blogs</a>
+                <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+
+            <div class="image">
+                <img src="pfp.jpg" Keerti">
+            </div>
+
+            <div class="content">
+
+                <h1>
+                    Hey I am <span>Keerti</span>
+                </h1>
+
+                <div class="typewriter">
+                    A web developer <span></span>
+                </div>
+
+                <p>
+                    with a background in competitive programming and a growing interest in open source.
+                    I enjoy building practical web applications and exploring both frontend and backend development.
+                    Always learning, always building!!
+                </p>
+
+                <!-- SOCIAL LINKS -->
+                <div class="social-links">
+
+                    <a href="#" onclick="openLink('https://github.com/Keerti707')">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" onclick="openLink('https://www.linkedin.com/in/gupta-keerti/')">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="#" onclick="openLink('gmailto:24bsm032@iiitdmj.ac.in')">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- DOWNLOAD CV -->
+                <div class="btn">
+                    <a href="RESUME.pdf" download class="download-btn">
+                        Download CV
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
