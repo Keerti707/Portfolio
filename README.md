@@ -7,9 +7,7 @@ It reflects my journey from competitive programming to web development and open 
 
 🚀 Live Website
 
-(After enabling GitHub Pages, paste your live link here)
-
-https://yourusername.github.io/portfolio/
+https://Keerti707.github.io/Portfolio/
 
 
 🛠 Tech Stack
